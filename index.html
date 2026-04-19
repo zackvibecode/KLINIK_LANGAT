@@ -604,15 +604,59 @@
   }
   @media (max-width: 720px){
     .wrap{padding:0 20px;}
-    section{padding:80px 0;}
+    section{padding:72px 0;}
+    .nav{padding:0;}
     .nav-pill{display:none;}
-    .services-grid{grid-template-columns:1fr;}
+    .nav-cta{font-size:12.5px; padding:6px 8px 6px 16px; gap:8px;}
+    .nav-cta .wa-bubble{width:28px;height:28px;}
+    .nav-cta .wa-bubble svg{width:16px;height:16px;}
+    
+    /* Hero Fixes for Symmetry */
+    .hero{padding:20px 10px 0; border-radius: 0 0 28px 28px; min-height:auto;}
+    .hero-grid{padding-top:24px; gap:32px;}
+    .hero-copy{padding-bottom:0;}
+    .hero h1{font-size:38px; line-height:1.1; margin-bottom:16px;}
+    .hero p.lede{font-size:14.5px; margin-bottom:28px;}
+    .hero-ctas{flex-direction:column; gap:12px; margin-bottom:32px;}
+    .hero-ctas .btn{width:100%; justify-content:center;}
+    
+    .hero-meta{flex-direction:column; gap:20px; padding-top:24px;}
+    .hero-visual{height:360px; margin:0 10px;}
+    .chip-hours{top:16px; right:16px; padding:10px 14px;}
+    .chip-family{bottom:16px; left:16px; padding:10px 14px;}
+    .chip-text .l2{font-size:12px;}
+    
+    /* General Sizing Fixes */
+    .section-title{font-size:32px;}
+    .services-head{flex-direction:column; gap:16px;}
+    .services-grid{grid-template-columns:1fr; gap:16px;}
+    
+    /* Why Fixes */
+    .why{padding:72px 0;}
+    .why-visual{margin:0 10px; padding:16px;}
+    .why-visual .card-inner{inset:16px;}
+    .why-stats{left:16px; bottom:20px; min-width:auto; padding:14px; border-radius:16px;}
+    .why-stats .num{font-size:28px;}
+    .why-badge{right:16px; top:20px; padding:8px 12px 8px 8px;}
     .why-list{grid-template-columns:1fr;}
+    
+    /* Corp & About */
+    .corp{margin:0 16px; padding:60px 20px; border-radius:24px;}
     .corp-features{grid-template-columns:1fr;}
-    .foot-grid{grid-template-columns:1fr;}
-    .contact-info{padding:36px 28px;}
+    .corp-card{padding:24px;}
+    .about-visual{margin:0 10px;}
+    
+    /* Contact Sizing */
+    .contact-wrap{grid-template-columns:1fr; margin:0;}
+    .contact-info{padding:36px 24px;}
+    .contact-cta{flex-direction:column; gap:12px;}
+    .contact-cta .btn{width:100%; justify-content:center;}
+    .contact-map{min-height:360px;}
+    
+    /* Footer */
+    .foot-grid{grid-template-columns:1fr; gap:36px;}
     .float-wa .tx{display:none;}
-    .float-wa{padding:10px;}
+    .float-wa{padding:12px; right:16px; bottom:16px;}
   }
 </style>
 </head>
