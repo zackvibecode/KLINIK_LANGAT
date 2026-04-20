@@ -608,10 +608,19 @@
   @media (max-width: 720px){
     .wrap{padding:0 20px;}
     section{padding:72px 0;}
-    .nav{padding:10px 0 0 0; flex-direction: column; gap: 24px; align-items: stretch;}
-    .nav-pill{display:flex !important; width: 100%; overflow-x: auto; padding-bottom: 4px; border-radius: 20px; justify-content: flex-start; -webkit-overflow-scrolling: touch;}
+    .nav{padding:10px 0 0 0; flex-direction: column; gap: 16px;}
+    .nav-pill{
+      display: flex !important; width: 100%; justify-content: center; align-items: center;
+      background: transparent !important; border: none !important; backdrop-filter: none !important; padding: 0 !important;
+    }
     .nav-pill::-webkit-scrollbar { display: none; }
-    .nav-pill a{white-space: nowrap; padding: 10px 20px; font-size: 13.5px;}
+    .nav-pill a{white-space: nowrap; padding: 4px 6px; font-size: 13.5px; background: transparent !important; color: #fff !important; font-weight: 500;}
+    .nav-pill a:not(:last-child)::after {
+      content: "|";
+      color: rgba(255,255,255,0.4);
+      margin-left: 12px;
+      font-weight: 300;
+    }
     .nav-cta{display:none; /* Hid on mobile to reduce button clutter */}
     
     /* Hero Fixes for Symmetry */
