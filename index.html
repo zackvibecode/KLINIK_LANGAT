@@ -608,8 +608,10 @@
   @media (max-width: 720px){
     .wrap{padding:0 20px;}
     section{padding:72px 0;}
-    .nav{padding:0;}
-    .nav-pill{display:none;}
+    .nav{padding:0; flex-direction: column; gap: 20px; align-items: flex-start;}
+    .nav-pill{display:flex; width: 100%; overflow-x: auto; padding-bottom: 4px; border-radius: 20px;}
+    .nav-pill::-webkit-scrollbar { display: none; }
+    .nav-pill a{white-space: nowrap; padding: 8px 16px; font-size: 13px;}
     .nav-cta{display:none; /* Hid on mobile to reduce button clutter */}
     
     /* Hero Fixes for Symmetry */
